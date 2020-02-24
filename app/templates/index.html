@@ -1,0 +1,66 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="/../static/style.css">
+        <title>Carbon Emissions Quiz</title>
+    </head>
+    <body>
+      <h1>Want to learn how much your daily habits impact the environment? Take this carbon emissions quiz!</h1>
+      <form action = "/carbon_quiz" method="post">
+          <p>What type of transportation do you use throughout each day, on average?</p>
+            <input type="radio" name="transportation" value="Bus"> Bus<br>
+            <!-- <input type="radio" name="transportation" value="Car"> Car<br> -->
+            <input type="radio" name="transportation" value="Airplane"> Airplane<br>
+          <p>What type of car do you drive?</p>
+            <input type="radio" name="car" value="Minivan"> Minivan<br>
+            <input type="radio" name="car" value="Hybrid"> Hybrid<br>
+            <input type="radio" name="car" value="Electric"> Electric<br>
+            <input type="radio" name="car" value="SUV"> SUV<br>
+            <input type="radio" name="car" value="Pickup"> Pickup<br>
+            <input type="radio" name="car" value="Covertible"> Covertible<br>
+            <input type="radio" name="car" value="Wagon"> Wagon<br>
+            <input type="radio" name="car" value="Two-Seater Car"> Two-Seater Car<br>
+            <input type="radio" name="car" value="Family Car"> Family Car<br>
+            <input type="radio" name="car" value="I don't drive"> I don't drive<br>
+          <p>How many miles a day, approximately, do you drive?</p>
+            <input type="radio" name="mileage" value="0"> 0<br>
+            <input type="radio" name="mileage" value="5"> 5<br>
+            <input type="radio" name="mileage" value="10"> 10<br>
+            <input type="radio" name="mileage" value="15"> 15<br>
+            <input type="radio" name="mileage" value="20"> 20<br>
+            <input type="radio" name="mileage" value="25"> 25<br>
+            <input type="radio" name="mileage" value="30"> 30<br>
+            <input type="radio" name="mileage" value="35"> 35<br>
+            <input type="radio" name="mileage" value="40"> 40<br>
+          <p>About how many times a day do you utilize these sources of transportation?</p>
+            <input type="radio" name="trans per day" value="1"> 1<br>
+            <input type="radio" name="trans per day" value="2"> 2<br>
+            <input type="radio" name="trans per day" value="3"> 3<br>
+            <input type="radio" name="trans per day" value="4"> 4<br>
+            <input type="radio" name="trans per day" value="5"> 5<br>
+            <input type="radio" name="trans per day" value="6"> 6<br>
+          <p>During which meals do you eat beef?</p>
+              <input type="radio" name="meat per meal" value="Breakfast"> Breakfast<br>
+              <input type="radio" name="meat per meal" value="Lunch"> Lunch<br>
+              <input type="radio" name="meat per meal" value="Dinner"> Dinner<br>
+              <input type="radio" name="meat per meal" value="2 Meals"> 2 Meals<br>
+              <input type="radio" name="meat per meal" value="Every meal"> Every meal<br>
+              <input type="radio" name="meat per meal" value="None"> None<br>
+          <p>Do you own a laptop or a desktop computer?</p>
+              <input type="radio" name="computer" value="Laptop"> Laptop<br>
+              <input type="radio" name="computer" value="Desktop computer"> Desktop computer<br>
+              <input type="radio" name="computer" value="Neither"> Neither<br>
+          <p>What kind of lights do you use at home?</p>
+              <input type="radio" name="light" value="LED"> LED<br>
+              <input type="radio" name="light" value="Halogen"> Halogen<br>
+              <input type="radio" name="light" value="CFL"> CFL<br>
+              <input type="radio" name="light" value="Incandescent"> Incandescent<br>
+          <p>Do you turn the lights off when leaving a room?</p>
+              <input type="radio" name="power usage" value="yes"> Yes<br>
+              <input type="radio" name="power usage" value="no"> No<br>
+
+            <br>
+            <input type="submit" value="Calculate!"/>
+
+      </form>
+    </body>
+</html>
