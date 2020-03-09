@@ -1,0 +1,145 @@
+Last login: Wed Feb 26 21:21:37 on ttys001
+05527:flask-and-MongoDB 2021rsuvanto$ vim pie_chart.py
+05527:flask-and-MongoDB 2021rsuvanto$ nano pie_chart.py 
+05527:flask-and-MongoDB 2021rsuvanto$ python pie_chart.py 
+/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/tight_layout.py:225: UserWarning: tight_layout : falling back to Agg renderer
+  warnings.warn("tight_layout : falling back to Agg renderer")
+05527:flask-and-MongoDB 2021rsuvanto$ nano pie_chart.py 
+05527:flask-and-MongoDB 2021rsuvanto$ python pie_chart.py 
+/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/tight_layout.py:225: UserWarning: tight_layout : falling back to Agg renderer
+  warnings.warn("tight_layout : falling back to Agg renderer")
+05527:flask-and-MongoDB 2021rsuvanto$ nano pie_chart.py 
+
+
+
+
+
+
+
+
+
+
+05527:flask-and-MongoDB 2021rsuvanto$ pwd
+/Users/2021rsuvanto/Documents/compsci/flask-and-MongoDB
+05527:flask-and-MongoDB 2021rsuvanto$ ls
+Procfile		app			pie_chart.py		requirements.txt	runtime.txt
+__pycache__		main.py			readme.md		run-variables.md
+05527:flask-and-MongoDB 2021rsuvanto$ cd 
+05527:~ 2021rsuvanto$ pwd
+/Users/2021rsuvanto
+05527:~ 2021rsuvanto$ mkdir pie_chart
+05527:~ 2021rsuvanto$ cd pie_chart/
+05527:pie_chart 2021rsuvanto$ pwd
+/Users/2021rsuvanto/pie_chart
+05527:pie_chart 2021rsuvanto$ cp /Users/2021rsuvanto/Documents/compsci/flask-and-MongoDB/pie_chart.py pie_chart.py
+05527:pie_chart 2021rsuvanto$ ls
+pie_chart.py
+05527:pie_chart 2021rsuvanto$ python pie_chart.py
+  File "pie_chart.py", line 1
+    import matplotlib.pyplot as plt
+    ^
+IndentationError: unexpected indent
+05527:pie_chart 2021rsuvanto$ nano pie_chart.py
+05527:pie_chart 2021rsuvanto$ python pie_chart.py
+/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/matplotlib/tight_layout.py:225: UserWarning: tight_layout : falling back to Agg renderer
+  warnings.warn("tight_layout : falling back to Agg renderer")
+05527:pie_chart 2021rsuvanto$ export FLASK_APP=main.py
+05527:pie_chart 2021rsuvanto$ export FLASK_RUN_HOST=0.0.0.0
+05527:pie_chart 2021rsuvanto$ export FLASK_RUN_PORT=8080
+05527:pie_chart 2021rsuvanto$ export FLASK_DEBUG=1
+05527:pie_chart 2021rsuvanto$ flask pie_chart.py
+Usage: flask [OPTIONS] COMMAND [ARGS]...
+Try "flask --help" for help.
+
+Error: No such command "pie_chart.py".
+05527:pie_chart 2021rsuvanto$ flask run pie_chart.py
+Usage: flask run [OPTIONS]
+Try "flask run --help" for help.
+
+Error: Got unexpected extra argument (pie_chart.py)
+05527:pie_chart 2021rsuvanto$ flask run
+ * Serving Flask app "main.py" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-870-717
+127.0.0.1 - - [26/Feb/2020 22:12:35] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 240, in locate_app
+    __import__(module_name)
+ModuleNotFoundError: No module named 'main'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 338, in __call__
+    self._flush_bg_loading_exception()
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 326, in _flush_bg_loading_exception
+    reraise(*exc_info)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 314, in _load_app
+    self._load_unlocked()
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 330, in _load_unlocked
+    self._app = rv = self.loader()
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 388, in load_app
+    app = locate_app(self, import_name, name)
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 250, in locate_app
+    raise NoAppException('Could not import "{name}".'.format(name=module_name))
+flask.cli.NoAppException: Could not import "main".
+127.0.0.1 - - [26/Feb/2020 22:12:35] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:12:35] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:12:36] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:12:36] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:12:36] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:12:36] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:12:36] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:12:36] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+^C05527:pie_chart 2021rsuvanto$ export FLASK_APP=main.py
+05527:pie_chart 2021rsuvanto$ export FLASK_RUN_HOST=0.0.0.0
+05527:pie_chart 2021rsuvanto$ export FLASK_RUN_PORT=8080
+05527:pie_chart 2021rsuvanto$ export FLASK_DEBUG=1
+05527:pie_chart 2021rsuvanto$ flask run
+ * Serving Flask app "main.py" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 104-870-717
+127.0.0.1 - - [26/Feb/2020 22:28:24] "GET / HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 240, in locate_app
+    __import__(module_name)
+ModuleNotFoundError: No module named 'main'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 338, in __call__
+    self._flush_bg_loading_exception()
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 326, in _flush_bg_loading_exception
+    reraise(*exc_info)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 314, in _load_app
+    self._load_unlocked()
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 330, in _load_unlocked
+    self._app = rv = self.loader()
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 388, in load_app
+    app = locate_app(self, import_name, name)
+  File "/usr/local/lib/python3.7/site-packages/flask/cli.py", line 250, in locate_app
+    raise NoAppException('Could not import "{name}".'.format(name=module_name))
+flask.cli.NoAppException: Could not import "main".
+127.0.0.1 - - [26/Feb/2020 22:28:24] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:28:24] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:28:24] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:28:24] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2020 22:28:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+

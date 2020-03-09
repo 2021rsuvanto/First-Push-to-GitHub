@@ -3,3 +3,9 @@ body {
   /* background-color: white; */
   margin: 3em;
 }
+
+h1 {
+  color: magenta;
+  font-family: "Comic Sans MS";
+  font-size: 200%;
+}

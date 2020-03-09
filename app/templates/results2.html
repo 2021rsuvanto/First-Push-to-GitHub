@@ -1,0 +1,48 @@
+<html>
+    <head>
+      <!-- <link rel="stylesheet" href="/../static/style.css"> -->
+      <style>
+      h2 {
+        color: #008080;
+        font-family: "Comic Sans MS";
+        font-size: 200%;
+      }
+      p1 {
+        color: #C71585;
+        font-family: Impact;
+        font-size: 140%;
+      }
+      p2 {
+        color: #191970;
+        font-family: "Lucida Sans Unicode";
+        font-size: 100%;
+      }
+      h3 {
+        color: #008080;
+        font-family: "Comic Sans MS";
+        font-size: 200%;
+      }
+      body {
+        background-color: #F0F8FF;
+      }
+</style>
+        <title>Welcome!</title>
+    </head>
+    <body>
+        <h2>Your Plastic Usage Quiz Results</h2>
+        <br>
+        <p1>Even if you make a conscious effort to use less plastic throughout your every day life, there are still areas where we could all improve. Here is how you can improve, based on your current habits. :)</p1>
+        <br>
+
+        <h3>How To Improve:</h3>
+        <br>
+        {% autoescape false %}
+          <p2>{{advice}}</p2>
+        {% endautoescape %}
+
+        <br>
+
+        <button onclick="window.location.href = '/products';">Click Here for Environmentally Friendly Products</button>
+    </body>
+
+</html>

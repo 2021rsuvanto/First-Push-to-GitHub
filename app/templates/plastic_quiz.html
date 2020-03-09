@@ -1,0 +1,59 @@
+<html>
+    <head>
+      <!-- <link rel="stylesheet" href="/../static/style.css"> -->
+      <style>
+      h1 {
+        color: #4169E1;
+        font-family: "Comic Sans MS";
+        font-size: 250%;
+      }
+      p  {
+        color: #00008B;
+        font-family: "Lucida Sans Unicode";
+        font-size: 140%;
+      }
+      body {
+        background-color: #F5FFFA;
+      }
+</style>
+        <title>Plastic Usage Quiz</title>
+    </head>
+    <body>
+      <h1>Want to learn how much your daily habits impact the environment? Take this quiz to find out how much carbon you emit through daily plastic usage and waste!</h1>
+      <form action = "/plastic_quiz" method="post">
+          <p>What type of plates do you eat off of at home?</p>
+            <input type="radio" name="plates" value="Plastic"> Plastic<br>
+            <input type="radio" name="plates" value="Paper"> Paper<br>
+            <input type="radio" name="plates" value="Glass"> Glass<br>
+          <p>Do you use a reusable cup when going to a cafe, such as Starbucks?</p>
+            <input type="radio" name="cup" value="Yes"> Yes<br>
+            <input type="radio" name="cup" value="No"> No<br>
+            <input type="radio" name="cup" value="Sometimes"> Sometimes<br>
+          <p>Do you bring reusable, eco-friendly shopping bags with you when grocery shopping?</p>
+            <input type="radio" name="shopping bag" value="Yes"> Yes<br>
+            <input type="radio" name="shopping bag" value="No"> No<br>
+            <input type="radio" name="shopping bag" value="Sometimes"> Sometimes<br>
+          <p>Do you bring reusable, eco-friendly produce bags with you when grocery shopping?</p>
+            <input type="radio" name="produce bag" value="Yes"> Yes<br>
+            <input type="radio" name="produce bag" value="No"> No<br>
+            <input type="radio" name="produce bag" value="Sometimes"> Sometimes<br>
+          <p>What kind of straws do you use?</p>
+            <input type="radio" name="straws" value="Plastic"> Plastic<br>
+            <input type="radio" name="straws" value="Paper"> Paper<br>
+            <input type="radio" name="straws" value="Stainless Steel"> Stainless Steel<br>
+            <input type="radio" name="straws" value="Silicon"> Silicon<br>
+            <input type="radio" name="straws" value="None"> None<br>
+          <p>Do you use plastic wrap and aluminum foil at home?</p>
+            <input type="radio" name="wrap/foil" value="Yes"> Yes<br>
+            <input type="radio" name="wrap/foil" value="No"> No<br>
+          <p>Do you eat at fast food restaurants often?</p>
+            <input type="radio" name="fast food" value="Yes"> Yes<br>
+            <input type="radio" name="fast food" value="No"> No<br>
+            <input type="radio" name="fast food" value="Sometimes"> Sometimes<br>
+
+            <br>
+            <input type="submit" value="Calculate!"/>
+
+      </form>
+    </body>
+</html>

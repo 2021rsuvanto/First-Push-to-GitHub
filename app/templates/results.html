@@ -1,17 +1,55 @@
 <html>
     <head>
-      <link rel="stylesheet" href="/../static/style.css">
-        <title>Welcome!</title>
+      <!-- <link rel="stylesheet" href="/../static/style.css"> -->
+      <style>
+      h2 {
+        color: #483D8B;
+        font-family: "Comic Sans MS";
+        font-size: 200%;
+      }
+      p1  {
+        color: #0000FF;
+        font-family: "Arial Black";
+        font-size: 100%;
+      }
+      p  {
+        color: #000080;
+        font-family: "Gadget";
+        font-size: 100%;
+      }
+      h3 {
+        color: #483D8B;
+        font-family: "Comic Sans MS";
+        font-size: 200%;
+      }
+      body {
+        background-color: #F0F8FF;
+      }
+      .button {
+        padding: 10px 15px;
+      }
+</style>
+        <title>Carbon Emissions Quiz Results</title>
     </head>
     <body>
         <h2>Your Carbon Emissions Quiz Results</h2>
         <br>
-        <p>You output an average of {{output}} grams/day total.</p>
-        <img src="/plot.png" alt="my plot">
+        <p1>You output a total average of {{final_result}} grams/day of carbon.</p>
+        <p>The kind of car you drive and how often accounts for {{final_result_average["output"]}}% of your total carbon emissions per day.</p>
+        <p>How often and which modes of transportation you use accounts for {{final_result_average["output2"]}}% of your total carbon emissions per day.</p>
+        <p>How much beef you eat accounts for {{final_result_average["output3"]}}% of your total carbon emissions per day.</p>
+        <p>The type of computer you use accounts for {{final_result_average["output4"]}}% of your total carbon emissions per day.</p>
+        <p>The type of lights you use throughout your home accounts for {{final_result_average["output5"]}}% of your total carbon emissions per day.</p>
+        <p>Turning off the lights when you leave a room accounts for {{final_result_average["output6"]}}% of your total carbon emissions per day.</p>
         <br>
 
+        <h3>How To Improve:</h3>
+        <br>
+        <p>{{advice}}</p>
 
+        <br>
 
+        <button onclick="window.location.href = '/plastic';">Click Here for Plastic Usage Quiz!</button>
     </body>
 
 </html>
