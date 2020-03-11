@@ -207,13 +207,13 @@ def plastic_quiz():
     if platipus == "plastic" or "paper":
         advice += "If you eat off of glass plates and cut down on the number of plastic or paper plates you buy, your negative impact on the environment will greatly decrease, based on your current plastic-usage habits. I know washing dishes is a pain, but in the end, it is worth it!"
 
-    if platipus2 == "No" or "Sometimes":
+    if platipus2 == "No":
         advice += "<br><br>If you cut down on the number of plastic and paper cups you use and instead bring portable beverage bottles when purchasing coffee and other drinks, your negative impact on the environment will greatly decrease, based on your current plastic-usage habits. I know washing dishes is a pain, but in the end, it is worth it!"
 
-    if platipus3 == "No" or "Sometimes":
+    if platipus3 == "No":
         advice += "<br><br>If you cut down on the number of plastic and paper bags you use and instead bring reusable shopping bags when shopping for food, etc., your negative impact on the environment will greatly decrease, based on your current plastic-usage habits."
 
-    if platipus4 == "No" or "Sometimes":
+    if platipus4 == "No":
         advice += "<br><br>If you cut down on the number of plastic and paper bags you use and instead bring reusable produce bags when grocery shopping, your negative impact on the environment will greatly decrease, based on your current plastic-usage habits."
 
     if platipus5 == "Plastic" or "Paper":
