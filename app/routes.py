@@ -4,14 +4,14 @@ from flask import render_template, request, redirect
 from app.models import model
 from flask import Flask
 
-import io
+# import io
 import random
-import matplotlib.pyplot as plt
-import numpy as np
-import matplotlib.image as mpimg
+# import matplotlib.pyplot as plt
+# import numpy as np
+# import matplotlib.image as mpimg
 from flask import Response
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-from matplotlib.figure import Figure
+# from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+# from matplotlib.figure import Figure
 
 
 # from flask_pymongo import PyMongo
